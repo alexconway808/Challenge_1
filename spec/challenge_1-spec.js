@@ -1,11 +1,9 @@
 var challenge_1 = require("../challenge_1");
  
 describe("Sum of a Multiple", function () {
-  
-  it("should return '23' for n=10", function () {
-    var sum = challenge_1.sumOfAMultiple(10);
-    expect(sum).toBe(23);
-  });
+  var sumof5 = challenge_1.sumOfAMultiple(5);
+  sumof5.should.equal(5);
+
 
   it("should return '2318' for n=100", function () {
     var sum = challenge_1.sumOfAMultiple(100);
